@@ -1,0 +1,13 @@
+public class MinMaxTester {
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,3,2,1};
+
+        MinMaxIndex.findMinIndex(arr);
+
+        MinMaxIndex.findMaxIndex(arr);
+
+        System.out.println(MinMaxIndex.findMinIndex(arr));
+
+        System.out.println(MinMaxIndex.findMaxIndex(arr));
+    }
+}
