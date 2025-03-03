@@ -1,0 +1,21 @@
+public class LogicalUtilTester {
+    public static void main(String[] args) {
+        boolean type = LogicalUtil.thereExists(false, false, true);
+        System.out.println(type);
+
+        type = LogicalUtil.forAll(true, true, true);
+        System.out.println(type);
+
+        type = LogicalUtil.majority(true, true, false);
+        System.out.println(type);
+
+        type = LogicalUtil.minority(false, false, false);
+        System.out.println(type);
+
+        type = LogicalUtil.implies(true, false);
+        System.out.println(type);
+
+        type = LogicalUtil.implies(true, true, false);
+        System.out.println(type);
+    }
+}
