@@ -1,0 +1,22 @@
+public class TemperatureTester {
+    public static void main(String[] args) {
+
+		double celsius = Temperature.celsiusToFahrenheit(1.0);
+		System.out.println(celsius);
+
+		double celsius2 = Temperature.celsiusToKelvin(1.0);
+		System.out.println(celsius2);
+
+		double fahrenheit = Temperature.fahrenheitToCelsius(1.0);
+		System.out.println(fahrenheit);
+
+		double fahrenheit2 = Temperature.fahrenheitToKelvin(1.0);
+		System.out.println(fahrenheit2);
+
+		double kelvin = Temperature.kelvinToFahrenheit(1.0);
+		System.out.println(kelvin);
+
+		double kelvin2 = Temperature.kelvinToCelsius(1.0);
+		System.out.println(kelvin2);
+	}
+}
