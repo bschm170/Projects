@@ -1,0 +1,28 @@
+public class TimeTester {
+	public static void main(String[] args) {
+
+		double seconds = Time.secondsToMinutes(1);
+		System.out.println(seconds);
+
+		double seconds2 = Time.secondsToHours(1);
+		System.out.println(seconds2);
+
+		double seconds3 = Time.secondsToDays(1);
+		System.out.println(seconds3);
+
+		double seconds4 = Time.secondsToYears(1);
+		System.out.println(seconds4);
+
+		double minutes = Time.minutesToSeconds(1.0);
+		System.out.println(minutes);
+
+		double hours = Time.hoursToSeconds(1.0);
+		System.out.println(hours);
+
+        double days = Time.daysToSeconds(1.0);
+		System.out.println(days);
+
+        double years = Time.yearsToSeconds(1.0);
+		System.out.println(years);
+	}
+}
