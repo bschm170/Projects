@@ -1,0 +1,36 @@
+package Labs;
+import java.util.Scanner;
+
+public class StudentGrader {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+
+        int test = input.nextInt();
+        int homework = input.nextInt();
+        int lab = input.nextInt();
+
+        int testGrade = (int) (test * .40);
+        int homeworkGrade = (int) (homework * .50);
+        int labGrade = (int) (lab * .10);
+        int finalGrade = (testGrade + homeworkGrade + labGrade);
+        System.out.println(finalGrade);
+    }
+}
+package Labs;
+import java.util.Scanner;
+
+public class StudentGrader {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+
+        int test = input.nextInt();
+        int homework = input.nextInt();
+        int lab = input.nextInt();
+
+        int testGrade = (int) (test * .40);
+        int homeworkGrade = (int) (homework * .50);
+        int labGrade = (int) (lab * .10);
+        int finalGrade = (testGrade + homeworkGrade + labGrade);
+        System.out.println(finalGrade);
+    }
+}
