@@ -1,0 +1,38 @@
+public class DNA {
+    private char[] sequence;
+
+    public DNA(char[] sequence) {
+        this.sequence = sequence;
+    } 
+
+    public char[] getSequence() {
+        return sequence;
+    }
+
+    public DNA swap(DNA other, int swapPoint) {
+        char[] sequence = this.getSequence();
+        char[] otherSequence = other.getSequence();
+
+        for(int i = swapPoint; i<sequence.length; i++) {
+            sequence[i] = otherSequence[i];
+        }
+        DNA swappedDNA = new DNA(sequence);
+        return swappedDNA;
+    }
+
+    public boolean equals(DNA other) {
+        boolean DNA1 = true;
+        boolean DNA2 = true;
+
+        if(DNA1 == DNA2) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    public String toString() {
+        String string = new String(sequence);
+        return string;
+    }
+}
