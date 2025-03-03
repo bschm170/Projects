@@ -1,0 +1,28 @@
+public class CookingTester {
+    public static void main(String[] args) {
+
+		double teaspoons = Cooking.teaspoonsToTablespoons(3);
+		System.out.println(teaspoons);
+
+		double tablespoons = Cooking.tablespoonsToTeaspoons(1);
+		System.out.println(tablespoons);
+
+		double tablespoons2 = Cooking.tablespoonsToCups(16);
+		System.out.println(tablespoons2);
+
+		double cups = Cooking.cupsToTablespoons(1);
+		System.out.println(cups);
+
+		double ounces = Cooking.ouncesToCups(8);
+		System.out.println(ounces);
+
+		double cups2 = Cooking.cupsToOunces(1);
+		System.out.println(cups2);
+
+        double cups3 = Cooking.cupsToPints(2);
+        System.out.println(cups3);
+
+        double pints = Cooking.pintsToCups(1);
+        System.out.println(pints);
+	}
+}
