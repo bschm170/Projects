@@ -1,0 +1,19 @@
+public class Point2DTester {
+    public static void main(String[] args) {
+        Point2D p1 = new Point2D(1,1);
+
+        String string1 = String.format("point 1: %s\n", p1);
+        System.out.printf(string1);
+
+        //System.out.println(p1.toString());
+
+        Point2D p2 = new Point2D(4, 3);
+
+        String string2 = String.format("point2: %s\n", p2);
+        System.out.println(string2);
+
+        double distance = p1.distance(p2);
+
+        System.out.printf("distance: %f\n", distance);
+    }
+}
