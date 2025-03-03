@@ -1,0 +1,29 @@
+package Labs;
+
+import java.util.Scanner;
+
+public class PointofSaleSystem {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int order = input.nextInt(6) + 1;
+        int orders = input.nextInt();
+        int finishedOrder = (order + orders);
+        orders++;
+
+        if(order == 1) {
+            System.out.println("Please pay $1.50 Thank you for eating at McDowell's!");
+        } else if (order == 2) {
+            System.out.println("Please pay $1.75 Thank you for eating at McDowell's!");
+        } else if (order == 3) {
+            System.out.println("Please pay $2.50 Thank you for eating at McDowell's!");
+        } else if (order == 4) {
+            System.out.println("Please pay $2.75 Thank you for eating at McDowell's!");
+        } else if (order == 5) {
+            System.out.println("Please pay $0.99 Thank you for eating at McDowell's!");
+        } else if (order == 6) {
+            System.out.println("Please pay $1.75 Thank you for eating at McDowell's!");
+        } else if (order + orders == finishedOrder) {
+            System.out.println("Please pay " + finishedOrder + " Thank you for eating at McDowell's!");
+        }
+    }
+}
