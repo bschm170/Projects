@@ -1,0 +1,25 @@
+public class StringUtil {
+    public static String toString(double data) {
+        return " " + data;
+    }
+
+    public static String toString(float data) {
+        return " " + data;
+    }
+
+    public static String toString(int data) {
+        return " " + data;
+    }
+
+    public static String toString(long data) {
+        return " " + data;
+    }
+
+    public static String toString(char data) {
+        return " " + data;
+    }
+
+    public static String toString(boolean data) {
+        return " " + data;
+    }
+}
