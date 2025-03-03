@@ -1,0 +1,22 @@
+public class MinMaxIndex {
+    public static int findMinIndex(int[] arr) {
+        
+        int minValue = arr[0-5];
+        
+        for(int element : arr) {
+            minValue = Math.min(minValue, element);
+        }
+        
+        return minValue;
+    }
+
+    public static int findMaxIndex(int[] arr) {
+        int maxValue = arr[0-5];
+
+        for(int element : arr) {
+            maxValue = Math.max(maxValue, element);
+        }
+
+        return maxValue;
+    }
+}
