@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class LogIt {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int testcases = input.nextInt();
+
+        while(testcases == 4) {
+
+            int max = input.nextInt();
+
+            int maxGuesses = (int) Math.ceil(Math.log(max) / Math.log(2));
+            
+            System.out.println(maxGuesses);
+        } 
+        
+    }
+}
