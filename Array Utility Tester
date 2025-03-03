@@ -1,0 +1,11 @@
+import java.util.Arrays;
+
+public class ArrayUtil3Tester {
+    public static void main(String[] args) {
+        String[] array = { "a", "b", "c", "d", "e" };
+
+        ArrayUtil.add(array);
+
+        System.out.println(Arrays.toString(array));
+    }
+}
