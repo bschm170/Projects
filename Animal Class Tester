@@ -1,0 +1,25 @@
+public class AnimalTester {
+    public static void main(String[] args) {
+    
+        Animal firstAnimal = new Dog();
+    
+        System.out.println(firstAnimal.getType());
+
+        firstAnimal.move();
+        System.out.println(firstAnimal.call());
+
+        Animal secondAnimal = new Fish();
+    
+        System.out.println(secondAnimal.getType());
+
+        secondAnimal.move();
+        System.out.println(secondAnimal.call());
+
+        Animal thirdAnimal = new Bird();
+    
+        System.out.println(thirdAnimal.getType());
+
+        thirdAnimal.move();
+        System.out.println(thirdAnimal.call());
+    }
+}
