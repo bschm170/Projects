@@ -1,0 +1,22 @@
+public class GeometryTester {
+	public static void main(String[] args) {
+
+		double rectangleArea = Geometry.getAreaRectangle(1.0,1.0);
+		System.out.println(rectangleArea);
+
+		double circleArea = Geometry.getAreaCircle(1.0);
+		System.out.println(circleArea);
+
+		double triangleArea = Geometry.getAreaTriangle(1.0,1.0);
+		System.out.println(triangleArea);
+
+		double rectanglePerimeter = Geometry.getPerimeterRectangle(1.0,1.0);
+		System.out.println(rectanglePerimeter);
+
+		double circlePerimeter = Geometry.getPerimeterCircle(1.0);
+		System.out.println(circlePerimeter);
+
+		double trianglePerimeter = Geometry.getPerimeterTriangle(1.0,1.0,1.0);
+		System.out.println(trianglePerimeter);
+	}
+}
