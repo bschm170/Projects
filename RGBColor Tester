@@ -1,0 +1,19 @@
+public class RGBColorTester {
+    public static void main(String[] args) {
+        RGBColor x = new RGBColor(90, 16, 0);
+        
+        RGBColor y = new RGBColor(0, 0, 0);
+
+        boolean t = x.equals(y);
+
+        System.out.println(t);
+
+        String dec = x.toString();
+
+        System.out.println(dec);
+
+        String hex = x.toHex();
+
+        System.out.printf(hex);
+    }
+}
