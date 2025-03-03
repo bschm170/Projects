@@ -1,0 +1,29 @@
+package Labs;
+import java.util.Scanner;
+
+public class PapersPlease {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+
+        boolean passport;
+        boolean driversLicense;
+        boolean birthCertificate;
+
+        passport = input.nextBoolean();
+        driversLicense = input.nextBoolean();
+        birthCertificate = input.nextBoolean();
+
+        if(passport == true) {
+            System.out.println("true");
+        }
+
+        if(passport == false && driversLicense && birthCertificate == true) {
+            System.out.println("true");
+        } 
+
+        if(passport == false && driversLicense && birthCertificate == false) {
+            System.out.println("false");
+        }
+
+    }
+}
