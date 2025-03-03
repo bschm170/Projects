@@ -1,0 +1,15 @@
+public class DateUtilTester {
+    public static void main(String[] args) {
+        String type = DateUtil.format(01,01,2000);
+        System.out.println(type);
+
+        type = DateUtil.format("Sept 30", 1999);
+        System.out.println(type);
+
+        type = DateUtil.format("October", 31, 2018);
+        System.out.println(type);
+
+        type = DateUtil.format("Oct", "31st", "twenty-18");
+        System.out.println(type);
+    }
+}
