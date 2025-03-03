@@ -1,0 +1,41 @@
+import java.lang.Math;
+
+public class Point2D {
+    
+    private double x;
+    private double y;
+
+    public Point2D(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public double getX() {
+        return this.x;
+    }
+
+    public double getY() {
+        return this.y;
+    }
+
+    public double distance(Point2D other) {
+
+        double distance = (other.getX() - this.x) * (other.getX() - this.x)+ (other.getY() - this.y) * (other.getY() - this.y);
+        return Math.sqrt(distance);
+    }
+
+    public void moveBy(double dx, double dy) {
+        this.x = this.x + dx;
+        this.y = this.y + dy;
+    }
+
+    public void moveTo(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public String toString(){
+        String variable = String.format("(%.1f,%.1f)", x, y);
+        return variable; 
+    }
+}
