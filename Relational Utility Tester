@@ -1,0 +1,21 @@
+public class RelationalUtilTester {
+    public static void main(String[] args) {
+        boolean type = RelationalUtil.isIncreasing(1, 2, 3);
+        System.out.println(type);
+
+        type = RelationalUtil.isDecreasing(3, 2, 1);
+        System.out.println(type);
+
+        type = RelationalUtil.isBetween(-1, 0, 1);
+        System.out.println(type);
+
+        type = RelationalUtil.isPositive(1);
+        System.out.println(type);
+
+        type = RelationalUtil.isNegative(-1);
+        System.out.println(type);
+
+        type = RelationalUtil.overlaps(0, 1, 2, 3);
+        System.out.println(type);
+    }
+}
