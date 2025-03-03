@@ -1,0 +1,17 @@
+public class DateUtil {
+    public static String format(int month, int day, int year) {
+        return "" + "0" + month + "/" + "0" + day + "/" + "" + year;
+    }
+
+    public static String format(String date, int year) {
+        return "" + date + "," + " " + year;
+    }
+
+    public static String format(String month, int day, int year) {
+        return "" + month + " " + day + "," + " " + year;
+    }
+
+    public static String format(String month, String day, String year) {
+        return "" + month + " " + day + "," + " " + year;
+    }
+}
