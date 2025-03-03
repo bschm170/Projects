@@ -1,0 +1,30 @@
+public class EmailTester {
+    public static void main(String[] args) {
+        Email firstEmail = new Email("first Email", "jseder@uno.edu", "bsschmi1@uno.edu", "Let's keep it simple");
+        
+        String subject = firstEmail.getSubject();
+
+        System.out.printf("The Subject is %s\n", subject);
+        
+        String body = firstEmail.getBody();
+
+        System.out.printf("The body is %s\n", body);
+
+        System.out.println(firstEmail);
+
+        firstEmail.setBody("Thank you.");
+
+        System.out.println(firstEmail);
+
+        firstEmail.addToBody("The arabic translation is Shukran.");
+
+        System.out.println(firstEmail);
+
+        Email secondEmail = new Email("first Email", "jseder@uno.edu", "bsschmi1@uno.edu", "Let's keep it simple");
+        Email thirdEmail = new Email("first Email", "jseder@uno.edu", "bsschmi1@uno.edu", "Let's keep it simple");
+
+        System.out.println(firstEmail.equals(secondEmail));
+        System.out.println(secondEmail.equals(thirdEmail));
+
+    }
+}
