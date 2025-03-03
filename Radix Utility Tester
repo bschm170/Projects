@@ -1,0 +1,21 @@
+public class RadixUtilTester {
+    public static void main(String[] args) {
+        String type = RadixUtil.base2("111");
+        System.out.println(type);
+
+        type = RadixUtil.base2(7);
+        System.out.println(type);
+
+        type = RadixUtil.base8("10");
+        System.out.println(type);
+
+        type = RadixUtil.base8(8);
+        System.out.println(type);
+
+        type = RadixUtil.base16("f");
+        System.out.println(type);
+
+        type = RadixUtil.base16(15);
+        System.out.println(type);
+    }
+}
