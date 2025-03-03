@@ -1,0 +1,22 @@
+public class MinMax {
+    public static int findMinValue(int[] arr) {
+        
+        int minValue = arr[0];
+        
+        for(int element : arr) {
+            minValue = Math.min(minValue, element);
+        }
+
+        return minValue;
+    }
+
+    public static int findMaxValue(int[] arr) {
+        int maxValue = arr[5];
+
+        for(int element : arr) {
+            maxValue = Math.max(maxValue, element);
+        }
+
+        return maxValue;
+    }
+}
