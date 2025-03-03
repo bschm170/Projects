@@ -1,0 +1,21 @@
+public class ArrayUtil3 {
+    public static String[] add(String element, String[] arr) {
+        int add = arr.length;
+
+        for(int i=0; i<add; i++) {
+            if(arr[i] == null) {
+                arr[i] = element;
+                return arr;
+            }
+        }
+
+        String[] array = new String[arr.length * 2];
+
+        for(int i=0; i<add; i++) {
+            array[i] = arr[i];
+        }
+
+        array[arr.length] = element;
+        return array;
+    }
+}
